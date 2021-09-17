@@ -920,4 +920,8 @@ F 3 "" H 4750 6650 50  0001 C CNN
 $EndComp
 Text Notes 4950 6850 0    50   ~ 0
 Decoupling
+Text Label 1900 3450 0    50   ~ 0
+D-
+Text Label 1900 3650 0    50   ~ 0
+D+
 $EndSCHEMATC
