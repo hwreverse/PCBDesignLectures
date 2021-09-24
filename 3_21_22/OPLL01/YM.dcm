@@ -1,0 +1,20 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LMC660
+D Quad operational amplifier
+K quad opamp
+F ~
+$ENDCMP
+#
+$CMP LMC660AIM
+D Quad operational amplifier Rail to Rail
+K quad opamp
+F ~
+$ENDCMP
+#
+$CMP YM2413
+D YAMAHA YM2413 Sound Module Type-LL
+F https://www.waveguide.se/?article=46&file=ym2413ds.pdf
+$ENDCMP
+#
+#End Doc Library

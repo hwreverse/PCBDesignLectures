@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name YM)(type Legacy)(uri ${KIPRJMOD}/YM.lib)(options "")(descr ""))
+  (lib (name LMC)(type Legacy)(uri ${KIPRJMOD}/OPLLdoc/LMC/LMC.lib)(options "")(descr "")(disabled))
+)
