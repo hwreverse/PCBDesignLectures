@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name Socket_Arduino_Mega)(type KiCad)(uri "$(KIPRJMOD)/Socket_Arduino_Mega.pretty")(options "")(descr ""))
+  (lib (name 3K)(type KiCad)(uri ${KIPRJMOD}/3K.pretty)(options "")(descr ""))
 )
