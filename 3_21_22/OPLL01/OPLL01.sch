@@ -1252,4 +1252,6 @@ Wire Bus Line
 	2300 2100 2300 3100
 Wire Bus Line
 	1250 2100 1250 3150
+Text Label 4900 5200 0    50   ~ 0
+VC
 $EndSCHEMATC
