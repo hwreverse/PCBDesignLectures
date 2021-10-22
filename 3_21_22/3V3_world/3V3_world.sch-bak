@@ -1,0 +1,120 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J?
+U 1 1 617308A7
+P 1050 5200
+F 0 "J?" H 1157 6067 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 1157 5976 50  0000 C CNN
+F 2 "" H 1200 5200 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1200 5200 50  0001 C CNN
+	1    1050 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 4600 1900 4600
+Wire Wire Line
+	1900 4600 1900 4100
+Wire Wire Line
+	1900 4100 950  4100
+Wire Wire Line
+	950  4100 950  3200
+Wire Wire Line
+	950  3200 1550 3200
+$Comp
+L Device:Polyfuse_Small F?
+U 1 1 61733283
+P 1650 3200
+F 0 "F?" V 1445 3200 50  0000 C CNN
+F 1 "Polyfuse_Small" V 1536 3200 50  0000 C CNN
+F 2 "" H 1700 3000 50  0001 L CNN
+F 3 "~" H 1650 3200 50  0001 C CNN
+	1    1650 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 61733ABC
+P 2300 3200
+F 0 "FB?" V 2063 3200 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 2154 3200 50  0000 C CNN
+F 2 "" V 2230 3200 50  0001 C CNN
+F 3 "~" H 2300 3200 50  0001 C CNN
+	1    2300 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6173429F
+P 2800 3500
+F 0 "C?" H 2915 3546 50  0000 L CNN
+F 1 "100nF" H 2915 3455 50  0000 L CNN
+F 2 "" H 2838 3350 50  0001 C CNN
+F 3 "~" H 2800 3500 50  0001 C CNN
+	1    2800 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61734E1C
+P 3350 3500
+F 0 "C?" H 3465 3546 50  0000 L CNN
+F 1 "10uF" H 3465 3455 50  0000 L CNN
+F 2 "" H 3388 3350 50  0001 C CNN
+F 3 "~" H 3350 3500 50  0001 C CNN
+	1    3350 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 3200 2200 3200
+Wire Wire Line
+	2400 3200 2800 3200
+Wire Wire Line
+	3350 3200 3350 3350
+Wire Wire Line
+	2800 3350 2800 3200
+Connection ~ 2800 3200
+Wire Wire Line
+	2800 3200 3350 3200
+Wire Wire Line
+	3350 3650 2800 3650
+Wire Wire Line
+	2800 3650 2800 3750
+Connection ~ 2800 3650
+$Comp
+L power:GND #PWR?
+U 1 1 61735FBF
+P 2800 3750
+F 0 "#PWR?" H 2800 3500 50  0001 C CNN
+F 1 "GND" H 2805 3577 50  0000 C CNN
+F 2 "" H 2800 3750 50  0001 C CNN
+F 3 "" H 2800 3750 50  0001 C CNN
+	1    2800 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 617368DE
+P 3350 3200
+F 0 "#PWR?" H 3350 3050 50  0001 C CNN
+F 1 "+5V" H 3365 3373 50  0000 C CNN
+F 2 "" H 3350 3200 50  0001 C CNN
+F 3 "" H 3350 3200 50  0001 C CNN
+	1    3350 3200
+	1    0    0    -1  
+$EndComp
+Connection ~ 3350 3200
+$EndSCHEMATC

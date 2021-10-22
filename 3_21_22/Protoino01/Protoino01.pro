@@ -1,4 +1,4 @@
-update=15/10/2021 21:13:53
+update=21/10/2021 21:20:50
 version=1
 last_client=kicad
 [general]
@@ -229,6 +229,17 @@ Enabled=0
 Name=Default
 Clearance=0.2
 TrackWidth=0.25
+ViaDiameter=0.6
+ViaDrill=0.3
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/1]
+Name=PWR
+Clearance=0.2
+TrackWidth=0.4
 ViaDiameter=0.6
 ViaDrill=0.3
 uViaDiameter=0.3
