@@ -1,0 +1,210 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-AU U?
+U 1 1 618407B6
+P 1650 2700
+F 0 "U?" H 1650 1111 50  0000 C CNN
+F 1 "ATmega328P-AU" H 1650 1020 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 1650 2700 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 1650 2700 50  0001 C CNN
+	1    1650 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61844BF3
+P 1650 1050
+F 0 "#PWR?" H 1650 900 50  0001 C CNN
+F 1 "+5V" H 1665 1223 50  0000 C CNN
+F 2 "" H 1650 1050 50  0001 C CNN
+F 3 "" H 1650 1050 50  0001 C CNN
+	1    1650 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61845544
+P 1650 4600
+F 0 "#PWR?" H 1650 4350 50  0001 C CNN
+F 1 "GND" H 1655 4427 50  0000 C CNN
+F 2 "" H 1650 4600 50  0001 C CNN
+F 3 "" H 1650 4600 50  0001 C CNN
+	1    1650 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 4600 1650 4200
+Wire Wire Line
+	1750 1200 1650 1200
+Wire Wire Line
+	1650 1050 1650 1200
+Connection ~ 1650 1200
+Text Notes 2550 1200 0    50   ~ 0
+GPIO : General Purpose Input /Output
+Wire Wire Line
+	2250 3400 3200 3400
+Wire Notes Line
+	3500 1500 3500 3600
+Wire Notes Line
+	3500 3600 4350 3600
+Wire Notes Line
+	4350 3600 4350 1500
+Wire Notes Line
+	4350 1500 3500 1500
+$Comp
+L power:+5V #PWR?
+U 1 1 61846197
+P 4000 2350
+F 0 "#PWR?" H 4000 2200 50  0001 C CNN
+F 1 "+5V" H 4015 2523 50  0000 C CNN
+F 2 "" H 4000 2350 50  0001 C CNN
+F 3 "" H 4000 2350 50  0001 C CNN
+	1    4000 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61846BD6
+P 4000 3150
+F 0 "#PWR?" H 4000 2900 50  0001 C CNN
+F 1 "GND" H 4005 2977 50  0000 C CNN
+F 2 "" H 4000 3150 50  0001 C CNN
+F 3 "" H 4000 3150 50  0001 C CNN
+	1    4000 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L jlcpcb-basic-resistor-0805:10M R?
+U 1 1 618475FF
+P 4000 2550
+F 0 "R?" H 4059 2596 50  0000 L CNN
+F 1 "10M" H 4059 2505 50  0000 L CNN
+F 2 "R_0805_2012Metric" V 3930 2550 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F1005T5E_C26108.pdf" V 4000 2550 50  0001 C CNN
+F 4 "C26108" V 4000 2550 50  0001 C CNN "LCSC"
+	1    4000 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L jlcpcb-basic-resistor-0805:10M R?
+U 1 1 61847BCE
+P 4000 2950
+F 0 "R?" H 4059 2996 50  0000 L CNN
+F 1 "10M" H 4059 2905 50  0000 L CNN
+F 2 "R_0805_2012Metric" V 3930 2950 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F1005T5E_C26108.pdf" V 4000 2950 50  0001 C CNN
+F 4 "C26108" V 4000 2950 50  0001 C CNN "LCSC"
+	1    4000 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2750 4000 2650
+Wire Wire Line
+	4000 2750 4000 2850
+Connection ~ 4000 2750
+Wire Wire Line
+	4000 3050 4000 3150
+Wire Wire Line
+	4000 2450 4000 2350
+$Comp
+L Switch:SW_Push SW?
+U 1 1 6184875C
+P 6750 2750
+F 0 "SW?" H 6750 3035 50  0000 C CNN
+F 1 "SW_Push" H 6750 2944 50  0000 C CNN
+F 2 "" H 6750 2950 50  0001 C CNN
+F 3 "~" H 6750 2950 50  0001 C CNN
+	1    6750 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 2750 7250 2750
+$Comp
+L power:+5V #PWR?
+U 1 1 61849150
+P 6450 2200
+F 0 "#PWR?" H 6450 2050 50  0001 C CNN
+F 1 "+5V" H 6465 2373 50  0000 C CNN
+F 2 "" H 6450 2200 50  0001 C CNN
+F 3 "" H 6450 2200 50  0001 C CNN
+	1    6450 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618499F5
+P 7250 3050
+F 0 "#PWR?" H 7250 2800 50  0001 C CNN
+F 1 "GND" H 7255 2877 50  0000 C CNN
+F 2 "" H 7250 3050 50  0001 C CNN
+F 3 "" H 7250 3050 50  0001 C CNN
+	1    7250 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2750 6450 2750
+$Comp
+L jlcpcb-basic-resistor-0805:10k R?
+U 1 1 6184A171
+P 6450 2300
+F 0 "R?" H 6509 2346 50  0000 L CNN
+F 1 "10k" H 6509 2255 50  0000 L CNN
+F 2 "R_0805_2012Metric" V 6380 2300 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F1002T5E_C17414.pdf" V 6450 2300 50  0001 C CNN
+F 4 "C17414" V 6450 2300 50  0001 C CNN "LCSC"
+	1    6450 2300
+	1    0    0    -1  
+$EndComp
+Connection ~ 6450 2750
+Wire Wire Line
+	6450 2750 6550 2750
+Text Notes 4400 2550 0    50   ~ 0
+Leakage Current
+Wire Wire Line
+	6450 2750 6450 2400
+Wire Wire Line
+	7250 2750 7250 3050
+Text Notes 6750 2250 0    50   ~ 0
+Pull-Up Resistor
+$Comp
+L jlcpcb-basic-resistor-0805:10k R?
+U 1 1 6184BE5F
+P 6450 3200
+F 0 "R?" H 6509 3246 50  0000 L CNN
+F 1 "10k" H 6509 3155 50  0000 L CNN
+F 2 "R_0805_2012Metric" V 6380 3200 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F1002T5E_C17414.pdf" V 6450 3200 50  0001 C CNN
+F 4 "C17414" V 6450 3200 50  0001 C CNN "LCSC"
+	1    6450 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6184C513
+P 6450 3300
+F 0 "#PWR?" H 6450 3050 50  0001 C CNN
+F 1 "GND" H 6455 3127 50  0000 C CNN
+F 2 "" H 6450 3300 50  0001 C CNN
+F 3 "" H 6450 3300 50  0001 C CNN
+	1    6450 3300
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	6450 2750 6450 3100
+Text Notes 5650 3250 0    50   ~ 0
+Pull-Down Resistor
+$EndSCHEMATC

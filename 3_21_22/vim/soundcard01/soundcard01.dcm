@@ -1,0 +1,11 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP YM2413
+D OPLL FM Sound Generator
+$ENDCMP
+#
+$CMP YM2413_grouped
+D OPLL FM Sound Generator
+$ENDCMP
+#
+#End Doc Library

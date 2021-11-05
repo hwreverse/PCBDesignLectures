@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Protoino01_advanced)(type KiCad)(uri ${KIPRJMOD}/Protoino01_advanced.pretty)(options "")(descr ""))
+)
