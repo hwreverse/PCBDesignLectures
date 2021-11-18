@@ -982,7 +982,7 @@ Wire Bus Line
 Wire Bus Line
 	5850 2250 5850 4450
 Text Notes 700  6350 0    50   ~ 0
-Decoupling for Logic Chips & CP2112
+Decoupling for Logic & CP2112
 Wire Wire Line
 	850  7000 1300 7000
 Wire Wire Line

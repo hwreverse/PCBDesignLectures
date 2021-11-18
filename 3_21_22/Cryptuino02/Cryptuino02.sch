@@ -781,9 +781,9 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2545-8-bit-AVR-Microc
 	1    8150 3050
 	-1   0    0    -1  
 $EndComp
-Text GLabel 1250 3050 2    50   BiDi ~ 0
+Text GLabel 2700 3050 2    50   BiDi ~ 0
 D-
-Text GLabel 1250 2950 2    50   BiDi ~ 0
+Text GLabel 2700 2950 2    50   BiDi ~ 0
 D+
 $Comp
 L power:GND #PWR012
@@ -975,12 +975,6 @@ Wire Wire Line
 	4800 5050 4600 5050
 Wire Wire Line
 	5450 5500 6650 5500
-Wire Bus Line
-	3650 4450 3650 5900
-Wire Bus Line
-	7200 3450 7200 4150
-Wire Bus Line
-	5850 2250 5850 4450
 Text Notes 700  6350 0    50   ~ 0
 Decoupling for Logic & CP2112
 Wire Wire Line
@@ -989,4 +983,62 @@ Wire Wire Line
 	850  6800 1300 6800
 Wire Notes Line
 	2600 7450 2600 6400
+Wire Wire Line
+	1250 3050 2150 3050
+Wire Wire Line
+	1250 2950 1700 2950
+$Comp
+L Device:D_TVS D?
+U 1 1 6190F4BB
+P 1700 3400
+F 0 "D?" V 1654 3480 50  0000 L CNN
+F 1 "D_TVS" V 1745 3480 50  0000 L CNN
+F 2 "" H 1700 3400 50  0001 C CNN
+F 3 "~" H 1700 3400 50  0001 C CNN
+	1    1700 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_TVS D?
+U 1 1 6190FD7A
+P 2150 3400
+F 0 "D?" V 2104 3480 50  0000 L CNN
+F 1 "D_TVS" V 2195 3480 50  0000 L CNN
+F 2 "" H 2150 3400 50  0001 C CNN
+F 3 "~" H 2150 3400 50  0001 C CNN
+	1    2150 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1700 3550 2150 3550
+Wire Wire Line
+	2150 3550 2150 3650
+Connection ~ 2150 3550
+$Comp
+L power:GND #PWR?
+U 1 1 61913F7E
+P 2150 3650
+F 0 "#PWR?" H 2150 3400 50  0001 C CNN
+F 1 "GND" H 2155 3477 50  0000 C CNN
+F 2 "" H 2150 3650 50  0001 C CNN
+F 3 "" H 2150 3650 50  0001 C CNN
+	1    2150 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 3250 1700 2950
+Connection ~ 1700 2950
+Wire Wire Line
+	1700 2950 2700 2950
+Wire Wire Line
+	2150 3250 2150 3050
+Wire Bus Line
+	3650 4450 3650 5900
+Wire Bus Line
+	7200 3450 7200 4150
+Wire Bus Line
+	5850 2250 5850 4450
+Connection ~ 2150 3050
+Wire Wire Line
+	2150 3050 2700 3050
 $EndSCHEMATC
