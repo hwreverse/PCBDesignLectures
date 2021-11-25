@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TPS61085T
+D 650-kHz and 1.2-MHz, 18.5-V Step-Up DC-DC Converter
+K DCDC Boost
+F https://datasheet.lcsc.com/lcsc/1806111833_Texas-Instruments-TPS61085TPWR_C75775.pdf
+$ENDCMP
+#
+#End Doc Library
